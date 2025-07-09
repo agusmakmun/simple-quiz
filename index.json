@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Emoji Quiz Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎯 Emoji Quiz Challenge</h1>
+            <p class="subtitle">Test your emoji knowledge with the team!</p>
+        </header>
+
+        <div id="start-screen" class="screen active">
+            <div class="welcome-card">
+                <h2>Welcome to the Emoji Quiz! 🎉</h2>
+                <p>How well do you know your emojis? Challenge your teammates and see who gets the highest score!</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">Questions</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Choices</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">60s</span>
+                        <span class="stat-label">Time Limit</span>
+                    </div>
+                </div>
+                <button id="start-btn" class="btn btn-primary">Start Quiz! 🚀</button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="quiz-info">
+                    <span id="question-counter">Question 1/10</span>
+                    <span id="timer">60s</span>
+                    <span id="score">Score: 0</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="emoji-display">
+                    <span id="current-emoji" class="emoji">🎯</span>
+                </div>
+                <h3 id="question-text">What does this emoji mean?</h3>
+                <div id="choices" class="choices">
+                    <!-- Choices will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="feedback" id="feedback">
+                <div id="feedback-message"></div>
+                <button id="next-btn" class="btn btn-secondary">Next Question →</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <div class="results-card">
+                <h2>Quiz Complete! 🎉</h2>
+                <div class="final-score">
+                    <span id="final-score-text">Score: 8/10</span>
+                    <div id="score-emoji" class="score-emoji">🏆</div>
+                </div>
+                <div class="score-breakdown">
+                    <div class="score-item">
+                        <span class="correct">✅ Correct: <span id="correct-count">8</span></span>
+                    </div>
+                    <div class="score-item">
+                        <span class="incorrect">❌ Incorrect: <span id="incorrect-count">2</span></span>
+                    </div>
+                    <div class="score-item">
+                        <span class="time">⏱️ Time: <span id="final-time">45s</span></span>
+                    </div>
+                </div>
+                <div class="performance-message" id="performance-message">
+                    <h3>Amazing! You're an emoji master! 🏆</h3>
+                </div>
+                <div class="action-buttons">
+                    <button id="play-again-btn" class="btn btn-primary">Play Again 🔄</button>
+                    <button id="share-btn" class="btn btn-secondary">Share Score 📤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
