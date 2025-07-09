@@ -2,6 +2,9 @@
 
 A fun, interactive emoji quiz designed for team building and entertainment! Test your emoji knowledge with this modern, responsive web application.
 
+<img width="1728" alt="Screenshot 2025-07-09 at 15 59 39" src="https://github.com/user-attachments/assets/15443fbe-6745-4b23-965c-c057be62a64e" />
+
+
 ## ✨ Features
 
 - **10 Fun Questions**: Test your knowledge of popular emojis
